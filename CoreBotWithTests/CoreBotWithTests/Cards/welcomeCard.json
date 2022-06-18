@@ -1,0 +1,53 @@
+﻿{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Image",
+      "url": "https://www.haui.edu.vn//media/73/t73821.jpg",
+      "size": "stretch"
+    },
+    {
+      "type": "TextBlock",
+      "spacing": "medium",
+      "size": "default",
+      "weight": "bolder",
+      "text": "Welcome to Chatbot404!",
+      "wrap": true,
+      "maxLines": 0
+    },
+    {
+      "type": "TextBlock",
+      "size": "default",
+      "isSubtle": true,
+      "text": "Chào mừng đến với trợ lý ảo Hỗ trợ kỹ thuật. Bạn gặp vấn đề gì thì nói với mình nhé!",
+      "wrap": true,
+      "maxLines": 0
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Chat với kỹ thuật viên",
+      "data": {
+        "msteams": {
+          "type": "messageBack",
+          "displayText": "Tôi đang kết nối cuộc hội thoại với Kỹ thuật viên. Xin hãy chờ chút...",
+          "text": "text to bots",
+          "value": "{\"bfKey\": \"bfVal\", \"conflictKey\": \"from value\"}"
+        }
+      }
+    },
+    {
+      "type": "Action.OpenUrl",
+      "title": "Gọi hỗ trợ trực tiếp",
+      "url": "https://stackoverflow.com/questions/tagged/botframework"
+    },
+    {
+      "type": "Action.OpenUrl",
+      "title": "Giới thiệu về HaUi",
+      "url": "https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-deploy-azure?view=azure-bot-service-4.0"
+    }
+  ]
+}
